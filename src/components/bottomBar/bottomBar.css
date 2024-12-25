@@ -1,0 +1,8 @@
+.bottomBarLayout{
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.bottomBarLayout > * {
+    flex: 1; /* Make all children have equal height */
+}
