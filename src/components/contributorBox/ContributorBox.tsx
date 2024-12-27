@@ -1,4 +1,5 @@
 import React from "react";
+import "./contributorBox.css";
 
 interface ContributorBoxProps {
   image: string;
@@ -14,7 +15,7 @@ const ContributorBox: React.FC<ContributorBoxProps> = ({
   link,
 }) => {
   return (
-    <div className="my-4 text-center">
+    <div className="my-4 text-center contributor-container">
       <img src={image} alt={text} style={{ maxHeight: "125px" }} />
       <p
         className="text-lg font-extrabold text-orange-700 drop-shadow-lg"
@@ -24,7 +25,9 @@ const ContributorBox: React.FC<ContributorBoxProps> = ({
       >
         {text}
       </p>
-      <a href={link}>{social}</a>
+      <a className="font-bold text-red-500" href={link}>
+        {social}
+      </a>
     </div>
   );
 };

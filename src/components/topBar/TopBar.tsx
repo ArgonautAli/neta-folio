@@ -14,7 +14,7 @@ const TopBar = () => {
       </div>
       <div></div>
       {upper_right.src.map((img: string) => (
-        <div className="flex flex-col items-center justify-between">
+        <div className="flex flex-col items-center justify-between rotating-div">
           <img
             src={img}
             className="h-[100px] w-[100px] rounded-full object-cover border-2 border-gray-300"

@@ -10,4 +10,14 @@
     color: transparent; /* Ensures color fallback if gradient isn't supported */
     -webkit-text-stroke: 2px white; /* Black border around text */
   }
+
+  .rotating-div {
+    z-index: 99999;
+    transition: transform 0.3s ease-in-out; /* Smooth rotation effect */
+}
+
+.rotating-div:hover {
+    transform: rotate(360deg); /* Rotate 360 degrees on hover */
+}
+
   

@@ -1,0 +1,10 @@
+
+.contributor-container {
+    cursor: pointer;
+
+  transition: transform 0.3s ease-in-out; /* Smooth zoom-in effect */
+}
+
+.contributor-container:hover {
+  transform: scale(1.1); /* Zoom in by 10% */
+}
