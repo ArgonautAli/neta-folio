@@ -13,9 +13,9 @@ Netafolio is an open-source, config-driven portfolio website built using Vite an
 
 ---
 
-## Demo
+<!-- ## Demo
 
-Check out the live demo: [Netafolio Demo](#)
+Check out the live demo: [Netafolio Demo](#) -->
 
 ---
 
@@ -31,13 +31,13 @@ Check out the live demo: [Netafolio Demo](#)
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/netafolio.git
+   git clone https://github.com/ArgonautAli/neta-folio
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd netafolio
+   cd neta-folio
    ```
 
 3. Install dependencies:
@@ -77,24 +77,108 @@ Netafolio is fully configurable through the `src/utils/config.ts` file. Follow t
 
    ```typescript
    export const config = {
-     topbar: {
-       logo: "/assets/logo.png",
-       links: [
-         { name: "Home", url: "/" },
-         { name: "Projects", url: "/projects" },
-       ],
+     background: {
+       image: {
+         src: new URL(
+           "../assets/background/flag-bg.jpg",
+           import.meta.url
+         ).toString(),
+       },
      },
-     midsection: {
-       heading: "Welcome to My Portfolio",
-       subheading: "Showcasing my projects and skills",
-       image: "/assets/mid-image.png",
+     bottomBar: {
+       image_first: {
+         src: new URL(
+           "../assets/bottomBar/image_first.png",
+           import.meta.url
+         ).toString(),
+         text: "Mr. Software",
+         link: "https://www.linkedin.com/in/alihaiderkhan/",
+         social: "Linkedin",
+       },
+       image_second: {
+         src: new URL(
+           "../assets/bottomBar/image_second.png",
+           import.meta.url
+         ).toString(),
+         text: "Mr. Artist",
+         link: "https://www.instagram.com/art_breaker_/",
+         social: "Instagram",
+       },
+       image_third: {
+         src: new URL(
+           "../assets/bottomBar/image_third.png",
+           import.meta.url
+         ).toString(),
+         text: "Mr. Yapper",
+         link: "https://x.com/thehaider",
+         social: "Twitter",
+       },
+       image_right: {
+         src: new URL(
+           "../assets/bottomBar/image_right.png",
+           import.meta.url
+         ).toString(),
+         text: "MAKER OF BEST COLD COFFEE",
+       },
      },
-     footer: {
-       text: "Made with ❤️ by Your Name",
-       links: [
-         { name: "GitHub", url: "https://github.com/yourusername" },
-         { name: "LinkedIn", url: "https://linkedin.com/in/yourprofile" },
-       ],
+     middleBar: {
+       logo: {
+         src: [
+           new URL("../assets/middleBar/logo.png", import.meta.url).toString(),
+           new URL(
+             "../assets/middleBar/logo_two.png",
+             import.meta.url
+           ).toString(),
+           new URL(
+             "../assets/middleBar/logo_three.png",
+             import.meta.url
+           ).toString(),
+         ],
+       },
+       image_left: {
+         src: new URL(
+           "../assets/middleBar/middle_left.png",
+           import.meta.url
+         ).toString(),
+       },
+       image_right: {
+         src: new URL(
+           "../assets/middleBar/middle_right.png",
+           import.meta.url
+         ).toString(),
+       },
+       text: {
+         upper: "OUR LEADER!!!",
+         middle: "MR. HAIDER, B.TECH ",
+         lower: "YOUNG WORLD ENGINEER AND ARTIST!!!",
+       },
+     },
+     upperBar: {
+       logo: {
+         src: new URL(
+           "../assets/upperBar/logo.png",
+           import.meta.url
+         ).toString(),
+       },
+       heading: {
+         text: "OUR BEACON OF HOPE!!!",
+       },
+       upper_right: {
+         src: [
+           new URL(
+             "../assets/upperBar/upper-right.png",
+             import.meta.url
+           ).toString(),
+           new URL(
+             "../assets/upperBar/upper-left.png",
+             import.meta.url
+           ).toString(),
+           new URL(
+             "../assets/upperBar/karpathy.png",
+             import.meta.url
+           ).toString(),
+         ],
+       },
      },
    };
    ```
@@ -134,7 +218,7 @@ We welcome contributions to Netafolio! Here’s how you can get involved:
 
 ### Issues
 
-If you encounter any issues or have suggestions, feel free to open an issue on the [GitHub repository](https://github.com/yourusername/netafolio/issues).
+If you encounter any issues or have suggestions, feel free to open an issue on the [GitHub repository](https://github.com/ArgonautAli/neta-folio/issues).
 
 ---
 
