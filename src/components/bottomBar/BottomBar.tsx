@@ -9,7 +9,7 @@ const BottomBar = () => {
   const right_image = image_right.src;
   return (
     <div className="bottomBarLayout">
-      <div className="flex justify-center">
+      <div className="flex justify-end z-50">
         <ContributorBox
           image={image_first.src}
           text={image_first.text}
@@ -29,13 +29,7 @@ const BottomBar = () => {
           link={image_third.link}
         />
       </div>
-      <div
-        className="content-center text-5xl font-bold text-amber-400 align-center"
-        style={{
-          textShadow:
-            "2px 2px 0px red, -2px -2px 0px red, 2px -2px 0px red, -2px 2px 0px red",
-        }}
-      >
+      <div className="content-center align-center  ">
         <img
           src={right_image}
           style={{
@@ -45,7 +39,12 @@ const BottomBar = () => {
             width: "auto", // Optional: maintain aspect ratio
           }}
         />
-        <p style={{ zIndex: 100, position: "relative" }}>{image_right.text}</p>
+        <p
+          className="bottom-gradient-text"
+          style={{ zIndex: 100, position: "relative", width: "50%" }}
+        >
+          {image_right.text}
+        </p>
       </div>
     </div>
   );

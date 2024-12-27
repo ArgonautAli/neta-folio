@@ -1,42 +1,35 @@
 import React from "react";
 import { config } from "../../utils/config";
+import "./middleBar.css";
 
 const Middlebar = () => {
   const { logo, image_left, image_right, text } = config.middleBar;
-  return (
-    <div className="relative flex justify-around items-center h-full">
-      {/* Image 1 */}
-      <div className="flex">
-        <div className="relative">
-          <img
-            src={logo.src}
-            className="h-[100px] w-[100px] object-cover opacity-70"
-            alt="Image 1"
-          />
-        </div>
 
-        {/* Image 2 */}
-        <div className="relative">
+  return (
+    <div className="relative flex justify-center items-center h-full">
+      {/* Background Images */}
+      <div className="absolute inset-0 z-0 flex justify-center items-center w-full h-full">
+        <div className="flex space-x-4">
+          <img src={logo.src} className="h-[75px] object-contain" alt="Logo" />
           <img
             src={image_left.src}
-            className="h-[300px] w-[300px] object-cover opacity-70"
-            alt="Image 2"
+            className="h-[500px] object-contain opacity-50"
+            alt="Image Left"
           />
         </div>
-      </div>
 
-      {/* Image 3 */}
-      <div className="relative">
         <img
           src={image_right.src}
-          className="h-[700px] w-[700px] object-cover "
-          alt="Image 3"
+          className="h-[600px] object-contain relative -top-20" // Moves the right image up
+          alt="Image Right"
         />
       </div>
 
-      {/* Text Overlay */}
-      <div className="absolute text-center text-white text-5xl font-bold">
-        Overlapping Text
+      {/* Foreground Content */}
+      <div className="absolute z-10 text-end">
+        <div className="gradient-text-upper text-end">{text.upper}</div>
+        <div className="gradient-text-upper">{text.middle}</div>
+        <p className="gradient-text-lower">{text.lower}</p>
       </div>
     </div>
   );

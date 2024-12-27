@@ -41,9 +41,9 @@ export const config = {
         src: new URL("../assets/middleBar/middle_right.png", import.meta.url).toString(),
       },
       text: {
-        upper:"",
-        middle: "",
-        lower: ""
+        upper:"OUR LEADER!!!",
+        middle: "MR. ALI HAIDER KHAN, B.TECH MAE",
+        lower: "YOUNG WORLD ENGINEER AND ARTIST!!!"
       }
 
     },
