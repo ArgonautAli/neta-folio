@@ -17,7 +17,7 @@ const ContributorBox: React.FC<ContributorBoxProps> = ({
     <div className="my-4 text-center">
       <img src={image} alt={text} style={{ maxHeight: "125px" }} />
       <p
-        className="text-lg font-extrabold text-amber-500 drop-shadow-lg"
+        className="text-lg font-extrabold text-orange-700 drop-shadow-lg"
         style={{
           textShadow: "4px 4px 6px rgba(0, 0, 0, 0.5)",
         }}

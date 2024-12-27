@@ -4,7 +4,7 @@
     font-weight: bold;
     text-transform: uppercase; /* Makes text all uppercase */
     -webkit-text-fill-color: white; /* Fills the text with white color */
-    -webkit-text-stroke: 2px orange; /* Orange outline around the text */
+    -webkit-text-stroke: 3px rgb(255, 115, 0); /* Orange outline around the text */
   }
   
   

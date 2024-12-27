@@ -8,7 +8,7 @@ const BottomBar = () => {
     config.bottomBar;
   const right_image = image_right.src;
   return (
-    <div className="bottomBarLayout">
+    <div className="bottomBarLayout flex justify-between">
       <div className="flex justify-end z-50">
         <ContributorBox
           image={image_first.src}
@@ -29,7 +29,7 @@ const BottomBar = () => {
           link={image_third.link}
         />
       </div>
-      <div className="content-center align-center  ">
+      <div className="content-center align-center">
         <img
           src={right_image}
           style={{
